@@ -101,8 +101,16 @@ export default () => (
           and constructive critism from fellow game developers. You can find the
           gameplay video down below.
         </p>
-        youtube: https://www.youtube.com/watch?v=nG5TXyyaeDs
-
+        <iframe class="youtube"
+          width="560"
+          height="315"
+          title="wildwatch"
+          src="https://www.youtube.com/embed/Ety0naqkcrM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          
+        ></iframe>
       </div>
     </div>
   </div>
