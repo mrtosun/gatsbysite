@@ -20,14 +20,14 @@ export default () =>
             </p>                
               
             <div class="main-left-socialmedia">
-            <Link to="/index"><img src={twitter}  class="smi"/></Link>
-            <Link to="/index"><img src={instagram}  class="smi"/></Link>
-            <Link to="/index"><img src={linkedin}  class="smi"/></Link>
+            <a href="https://twitter.com/tosunmert"><img src={twitter}  class="smi"/></a>
+            <a href="https://www.instagram.com/mert.tosun.id/"><img src={instagram}  class="smi"/></a>
+            <a href="https://www.linkedin.com/in/mert-tosun/"><img src={linkedin}  class="smi"/></a>
             </div>
           </div>
 
         </div>
-        <div class="right">
+        <div class="main-right">
           <div class="project">
             <Link to="/project1">              
                 <h2>Wildwatch</h2>      
@@ -35,7 +35,7 @@ export default () =>
             </Link>
           </div>
           <div class="project">
-            <Link to="/proje1">
+            <Link to="/project2">
               
                 <h2>Airfield Lights</h2>
               

@@ -9,14 +9,23 @@ import scenario from "../images/ww_scenario.gif"
 
 export default () => (
   <div class="main">
-    <div class="left">
+    <div class="main-left">
       <div class="left-header">
         <h1>Wildwatch</h1>
         <p class="hashtag">#game development</p>
       </div>
-      <div class="left-navigation"></div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>Previous</li>
+          <li>Next</li>
+        </ul>
+      </nav>
     </div>
-    <div class="right">
+
+    <div class="main-right">
       <div class="right-scrollable">
         <figure>
           <img src={banner} alt="wildwatch banner" class="project-image" />
@@ -101,16 +110,20 @@ export default () => (
           and constructive critism from fellow game developers. You can find the
           gameplay video down below.
         </p>
-        <iframe class="youtube"
-          width="560"
-          height="315"
+        <iframe
+          class="youtube"
+          width="672"
+          height="378"
           title="wildwatch"
           src="https://www.youtube.com/embed/Ety0naqkcrM"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-          
         ></iframe>
+        <p>
+          I continue to work on Wildwatch whenever I find time to spare. Who
+          knows, maybe one day you might want to get it during a Steam sale. :)
+        </p>
       </div>
     </div>
   </div>
