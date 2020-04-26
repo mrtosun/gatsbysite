@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 import sketch1 from "../images/sketch1.png"
 import sketch2 from "../images/sketch2.png"
@@ -10,6 +11,10 @@ import sketch7 from "../images/sketch7.png"
 
 export default () => (
   <div class="main">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Sketches</title>
+    </Helmet>
     <div class="main-left">
       <div class="left-header">
         <h1>Illustrations</h1>
@@ -17,11 +22,15 @@ export default () => (
       </div>
       <nav>
         <ul>
-          <li>
+        <li>
             <Link to="/">Home</Link>
           </li>
-          <li>Previous</li>
-          <li>Next</li>
+          <li>
+            <Link to="/project2">Previous</Link>
+          </li>
+          <li>
+            <Link to="/project1">Next</Link>
+          </li>
         </ul>
       </nav>
     </div>

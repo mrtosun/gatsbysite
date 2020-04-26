@@ -166,9 +166,10 @@ li:visited {
 .main-main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   max-width: 1400px;
-  padding: 30px 30px 30px 10%;
+  padding: 7% 30px 30px 15%;
   margin-left: 15%;
   margin-right: auto;
   margin-left: auto;
@@ -177,9 +178,8 @@ li:visited {
 .main-header {
   flex-direction: column;
   max-width: 900px;
-  height: 50%;
-  padding-top: 100px;
   margin-bottom: 50px;
+  padding-top: 10%px;
 }
 
 .main-header-info {
@@ -193,14 +193,12 @@ p.main-header-info {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
+  margin-bottom: 0;
 }
 
-.main-projects {
-  
-  height: 100%;
-}
 .project {
   display: flex;
+  overflow-wrap: break-word;
 }
 .line{
   border-top: 3px #f7f7f7 solid;
@@ -210,7 +208,7 @@ margin-right: 5px;
   
 }
 footer {
-  margin-top: 30px;
+  margin-top: 50px;
   display: flex;
 }
 .copyright {
@@ -250,6 +248,7 @@ h2 {
   transition: all 0.3s ease 0s;
   text-transform: uppercase;
   font-family: "Krona One", sans-serif;
+  overflow-wrap: break-word;
 }
 
 h2:hover {
@@ -261,3 +260,28 @@ h2:hover {
 .project:hover  .line {
   border-top: 3px salmon solid;
 }
+
+.link-main{
+  text-decoration: underline;
+}
+
+/*-------------------------------------------*/
+/* MEDIA QUARRIES*/
+/*-------------------------------------------*/
+@media screen and (max-width:1275px){
+.line{display: none;}
+}
+
+@media screen and (max-width:600px){
+  .line{display: none;}
+
+  h2{
+    font-size: 5rem;
+    line-height: 5rem;
+    overflow-wrap: break-word;
+  }
+
+  .project{
+    overflow-wrap: break-word;}
+  }
+  a {overflow-wrap: break-word;}
