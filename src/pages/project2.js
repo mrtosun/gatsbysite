@@ -28,7 +28,7 @@ export default () => (
       </nav>
     </div>
 
-    <div class="main-right">
+    
       <div class="right-scrollable">
         <figure>
           <img src={banner} alt="inset lights" class="project-image" />
@@ -49,8 +49,9 @@ export default () => (
           that this project showcases the full span of my product development
           skills.
         </p>
+        
         <figure>
-          <img src={sketch} alt="initial sketches" id="idle-gif" />
+          <img src={sketch} alt="initial sketches"/>
           <figcaption>Initial form explorations</figcaption>
         </figure>
         <h3>Modular Design</h3>
@@ -62,6 +63,7 @@ export default () => (
           different sized fittings allowing a more flexible production and lower
           maintainance times.
         </p>
+        
         <figure>
           <img
             src={module}
@@ -89,7 +91,6 @@ export default () => (
           <img
             src={prototype}
             alt="Prototype"
-            style={{ width: "85%", paddingBottom: "20px" }}
           />
           <figcaption>Prepared the CAD models for production</figcaption>
         </figure>
@@ -119,6 +120,6 @@ export default () => (
           </figcaption>
         </figure>
       </div>
-    </div>
+    
   </div>
 )

@@ -25,7 +25,7 @@ export default () => (
       </nav>
     </div>
 
-    <div class="main-right">
+    
       <div class="right-scrollable">
         <figure>
           <img src={banner} alt="wildwatch banner" class="project-image" />
@@ -125,6 +125,6 @@ export default () => (
           knows, maybe one day you might want to get it during a Steam sale. :)
         </p>
       </div>
-    </div>
+    
   </div>
 )
