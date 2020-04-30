@@ -4,10 +4,17 @@
 :root{
 --orange:#FFF3E5;
 --darkorange:#FEDEB8;
+--verydarkorange:salmon;
+
 --blue:#ECFAFF;
 --darkblue:#ADECFD;
+--verydarkblue:rgb(10, 100, 245);
+
 --green:#E1FFE9;
 --darkgreen:#9BEDB1;
+--verydarkgreen:rgb(0, 173, 87);
+
+--transition: all 0.5s ease 0s;
 }
 
 * {
@@ -181,9 +188,10 @@ li:visited {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  max-width: 960px;
+  max-width: 1050px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 60px;
 }
 /* Hi I'm Mert*/
 .main-header {
@@ -192,7 +200,7 @@ li:visited {
   max-width: 900px;
 }
 .main-header-info {
-  max-width: 700px;
+  max-width: 650px;
   margin-left: 0;
   font-weight: 400;
   font-size: 16px;
@@ -216,7 +224,8 @@ li:visited {
 
 .project {
   display: flex;
-  overflow-wrap: break-word;
+  height: 72px;
+  white-space: nowrap;
 }
 
 footer {
@@ -226,23 +235,21 @@ footer {
 }
 
 .social {
-  width: 200px;
+  width: 258px;
   display: flex;
-  padding-right: 16px;
+  padding-right: 70px;
   justify-content: space-between;
+
 }
 .social-text,
 .social-text:visited,
 .copyright {
   color: #c4c4c4;
   font-size: 14px;
+  transition: var(--transition);
 }
 
-.smi {
-  width: 1.2rem;
-  height: auto;
-  margin-right: 15px;
-}
+.social-text:hover {color: black;}
 
 /* Ana Başlık */
 h1 {
@@ -262,7 +269,7 @@ h1 {
   right: 0;
   bottom: 0;
   left: 0;
-  transition: .25s;
+  transition: var(--transition);
   pointer-events: none;
 }
 /* Proje Yazıları */
@@ -274,14 +281,12 @@ h2 {
 
   text-decoration: none;
   font-feature-settings: "kern" off, "liga" off;
-  transition: all 0.3s ease 0s;
+  transition: var(--transition);
   text-transform: uppercase;
   font-family: "quicksand", sans-serif;
-  overflow-wrap: break-word;
 }
 
 h2:hover {
-  background-image: linear-gradient(45deg, salmon, rgb(168, 93, 84));
   background-clip: text;
   color: transparent;
 }
@@ -292,27 +297,33 @@ h2:hover {
 
 .main-projects div:nth-child(1):hover ~ .bg{background-color: var(--orange);}
 .main-projects div:nth-child(2):hover ~ .bg{background-color: var(--blue);}
-.main-projects div:nth-child(2):hover ~ .bg{background-color: var(--green);}
+.main-projects div:nth-child(3):hover ~ .bg{background-color: var(--green);}
+
+.main-projects div:nth-child(1):hover h2{background-image: linear-gradient(45deg,var(--verydarkorange),var(--darkorange));}
+.main-projects div:nth-child(2):hover h2{background-image: linear-gradient(45deg, var(--verydarkblue),var(--darkblue));}
+.main-projects div:nth-child(3):hover h2{background-image: linear-gradient(45deg, var(--verydarkgreen),var(--darkgreen));}
 
 
 .line {
 visibility: hidden;
   margin-top: 4px;
   margin-right: 5px;
-  width: 200px;
+  width: 250px;
   font-size: 11px;
   letter-spacing: 0.4em;
 }
+.line1 {color: var(--verydarkorange);}
+.line2 {color: var(--verydarkblue);}
+.line3 {color: var(--verydarkgreen);}
 
-
-
+main-projects{white-space: nowrap;}
 
 
 
 /*-------------------------------------------*/
 /* MEDIA QUARRIES*/
 /*-------------------------------------------*/
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1040px) {
   .line {
     display: none;
   }

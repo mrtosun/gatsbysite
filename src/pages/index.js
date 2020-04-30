@@ -14,10 +14,8 @@ export default () => (
     <div class="main-header">
       <h1>Hi, I’m Mert!</h1>
       <p class="main-header-info">
-        I design things that range between physical products to video games and
-        some other things in between. I’m a PhD researcher at METU and a
-        lecturer at TOBB ETU. In my remaining time I give design consultancy
-        cook or go out for cycling.
+        I design things that range between physical products to video games. I’m a PhD researcher at METU and a
+        lecturer at TOBB ETU. In my remaining time I cook stuffed peppers, play some RTS or go out for cycling.
         <br></br>
         <br></br>
         Take a look at a selection of my projects or learn more{" "}
@@ -27,21 +25,20 @@ export default () => (
       </p>
     </div>
     <div class="main-projects">
-
       <div class="project">
-        <div class="line">#GAME DESIGN</div>
+        <div class="line line1">#GAME DESIGN</div>
         <Link to="/project1">
           <h2>Wildwatch</h2>
         </Link>
       </div>
       <div class="project">
-        <div class="line"></div>
+      <div class="line line2">#PRODUCT DESIGN</div>
         <Link to="/project2">
           <h2>Airfield Lights</h2>
         </Link>
       </div>
       <div class="project">
-        <div class="line"></div>
+      <div class="line line3">#DESIGN SKETCHING</div>
         <Link to="/project3">
           <h2>Illustrations</h2>
         </Link>
