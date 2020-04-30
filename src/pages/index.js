@@ -1,9 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
-import twitter from "../images/twitter.svg"
-import instagram from "../images/instagram.svg"
-import linkedin from "../images/linkedin.svg"
 
 export default () => (
   <div class="main-main">
@@ -19,7 +16,7 @@ export default () => (
         <br></br>
         <br></br>
         Take a look at a selection of my projects or learn more{" "}
-        <Link class="link-main" to="/project1">
+        <Link class="link-main" to="/about">
           about me.
         </Link>
       </p>

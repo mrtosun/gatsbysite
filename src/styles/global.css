@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
-:root{
---orange:#FFF3E5;
---darkorange:#FEDEB8;
---verydarkorange:salmon;
+:root {
+  --orange: #fff3e5;
+  --darkorange: #fedeb8;
+  --verydarkorange: salmon;
 
---blue:#ECFAFF;
---darkblue:#ADECFD;
---verydarkblue:rgb(10, 100, 245);
+  --blue: #ecfaff;
+  --darkblue: #adecfd;
+  --verydarkblue: rgb(10, 100, 245);
 
---green:#E1FFE9;
---darkgreen:#9BEDB1;
---verydarkgreen:rgb(0, 173, 87);
+  --green: #e1ffe9;
+  --darkgreen: #9bedb1;
+  --verydarkgreen: rgb(0, 173, 87);
 
---transition: all 0.5s ease 0s;
+  --transition: all 0.5s ease 0s;
 }
 
 * {
@@ -96,7 +96,8 @@ a:visited {
   color: #707070;
 }
 
-p.text {
+p.text,
+.about-list {
   font-size: 1rem;
   color: black;
   margin-top: 30px;
@@ -112,7 +113,8 @@ p.text {
 }
 
 p,
-h3 {
+h3
+.about-list {
   width: 70%;
   line-height: 2rem;
   margin-right: auto;
@@ -212,13 +214,13 @@ li:visited {
   color: #707070;
 }
 
-.link-main, 
+.link-main,
 .link-main:visited {
   text-decoration: underline;
   color: #707070;
 }
 
-.link-main:hover{
+.link-main:hover {
   color: black;
 }
 
@@ -239,7 +241,6 @@ footer {
   display: flex;
   padding-right: 70px;
   justify-content: space-between;
-
 }
 .social-text,
 .social-text:visited,
@@ -249,10 +250,13 @@ footer {
   transition: var(--transition);
 }
 
-.social-text:hover {color: black;}
+.social-text:hover {
+  color: black;
+}
 
 /* Ana Başlık */
-h1 {
+h1,
+.about-head {
   font-size: 3rem;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -295,30 +299,105 @@ h2:hover {
   visibility: visible;
 }
 
-.main-projects div:nth-child(1):hover ~ .bg{background-color: var(--orange);}
-.main-projects div:nth-child(2):hover ~ .bg{background-color: var(--blue);}
-.main-projects div:nth-child(3):hover ~ .bg{background-color: var(--green);}
+.main-projects div:nth-child(1):hover ~ .bg {
+  background-color: var(--orange);
+}
+.main-projects div:nth-child(2):hover ~ .bg {
+  background-color: var(--blue);
+}
+.main-projects div:nth-child(3):hover ~ .bg {
+  background-color: var(--green);
+}
 
-.main-projects div:nth-child(1):hover h2{background-image: linear-gradient(45deg,var(--verydarkorange),var(--darkorange));}
-.main-projects div:nth-child(2):hover h2{background-image: linear-gradient(45deg, var(--verydarkblue),var(--darkblue));}
-.main-projects div:nth-child(3):hover h2{background-image: linear-gradient(45deg, var(--verydarkgreen),var(--darkgreen));}
-
+.main-projects div:nth-child(1):hover h2 {
+  background-image: linear-gradient(
+    45deg,
+    var(--verydarkorange),
+    var(--darkorange)
+  );
+}
+.main-projects div:nth-child(2):hover h2 {
+  background-image: linear-gradient(
+    45deg,
+    var(--verydarkblue),
+    var(--darkblue)
+  );
+}
+.main-projects div:nth-child(3):hover h2 {
+  background-image: linear-gradient(
+    45deg,
+    var(--verydarkgreen),
+    var(--darkgreen)
+  );
+}
 
 .line {
-visibility: hidden;
+  visibility: hidden;
   margin-top: 4px;
   margin-right: 5px;
   width: 250px;
   font-size: 11px;
   letter-spacing: 0.4em;
 }
-.line1 {color: var(--verydarkorange);}
-.line2 {color: var(--verydarkblue);}
-.line3 {color: var(--verydarkgreen);}
+.line1 {
+  color: var(--verydarkorange);
+}
+.line2 {
+  color: var(--verydarkblue);
+}
+.line3 {
+  color: var(--verydarkgreen);
+}
 
-main-projects{white-space: nowrap;}
+main-projects {
+  white-space: nowrap;
+}
 
+/*-------------------------------------------*/
+/* ABOUT ME */
+/*-------------------------------------------*/
+.about {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.about-head {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.about-content {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+.about-content-photo {
+  width: 500px;
+  height: 100%;
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-content-info {
+  flex-grow: 1;
+  margin-left: 100px;
+  height: 100%;
+  width: 100%;
+}
+.about-content-info p {
+  width: 100%;
+}
 
+.about-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-list li{
+  margin-top: 8px;
+}
 
 /*-------------------------------------------*/
 /* MEDIA QUARRIES*/
