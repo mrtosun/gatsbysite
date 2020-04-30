@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^2.20.35",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.2.5",
     "gatsby-remark-embed-video": "^2.0.1",
     "react": "^16.12.0",
