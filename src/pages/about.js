@@ -14,7 +14,7 @@ export default () => (
 
       <div class="about-content">
         <div class="about-content-photo">
-          <img src={profile} alt="profile picture" id="about-photo-image" />
+          <img src={profile} alt="Mert Tosun" id="about-photo-image" />
         </div>
 
         <div class="about-content-info">
