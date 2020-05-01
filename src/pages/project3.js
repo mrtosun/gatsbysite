@@ -26,10 +26,10 @@ export default () => (
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/project2">Previous</Link>
+            <Link to="/project2">← Previous</Link>
           </li>
           <li>
-            <Link to="/project1">Next</Link>
+            <Link to="/project1">Next →</Link>
           </li>
         </ul>
       </nav>
