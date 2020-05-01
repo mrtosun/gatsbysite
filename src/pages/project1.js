@@ -35,9 +35,9 @@ export default () => (
     </div>
 
     <div class="right-scrollable">
-      <figure>
+
         <img src={banner} alt="wildwatch banner" class="project-image" />
-      </figure>
+
       <h3>The Game</h3>
       <p>
         Wildwatch revolves around the theme of birdwatching. It’s about creating

@@ -23,10 +23,6 @@ export default () => (
             consultancies to tech start-ups and work on my Phd Research on
             transformational games at METU. Meanwhile, I pass on my knowledge at
             TOBB ETU.
-            <br />
-            <br />I sketch and illustrate, using digital technologies %90 of the
-            time. I like rainy days, coffee, thriller movies and guitar
-            improvisations.
           </p>
           <ul class="about-list">
             <li>
