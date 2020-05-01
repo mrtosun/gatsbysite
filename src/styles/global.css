@@ -26,6 +26,10 @@ html {
     sans-serif;
   text-rendering: optimizeLegibility;
 }
+
+body {
+  margin: 0;
+}
 /*-------------------------------------------*/
 /* HOME */
 /*-------------------------------------------*/
@@ -204,21 +208,27 @@ h2:hover {
 .main {
   display: flex;
   height: 100vh;
+  margin: 0;
   max-width: 100vw;
   padding: 50px 30px 30px 30px;
+  background-color: lightslategrey;
 }
 
 .main-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 30%;
+  height: 90%;
+  margin-right: 50px;
+  background-color: lightblue;
 }
 
 .right-scrollable {
   height: 100%;
-  padding-right: 50px;
   overflow-y: auto;
-  padding-left: 120px;
+  width: 70%;
+  background-color: lightpink;
 }
 
 .right-image {
@@ -230,11 +240,17 @@ h2:hover {
 
 img {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 figure {
-  text-align: center;
   margin-bottom: 40px;
   width: 100%;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-inline-start: 0;
 }
 
 figcaption {
@@ -249,7 +265,7 @@ figcaption {
   width: 100%;
 }
 
-p.text {
+p {
   font-size: 1rem;
   color: black;
   margin-top: 30px;
@@ -260,8 +276,11 @@ p.text {
 .gif-png {
   display: flex;
   height: 400px;
+  justify-content: center;
   align-items: center;
   margin-top: -30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 p,
@@ -284,7 +303,6 @@ h3 {
 #idle-gif {
   height: 100%;
   width: auto;
-  margin-left: 40px;
 }
 #states {
   height: 50%;
@@ -298,11 +316,20 @@ h3 {
   line-height: 1.2rem;
 }
 
-.youtube {
+.youtube-container {
+  position: relative;
+  padding-bottom: 56.25%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
   display: block;
+}
+.youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*-------------------------------------------*/
@@ -399,13 +426,12 @@ nav a:hover,
     display: none;
   }
 }
-@media screen and (max-width: 870px){
+@media screen and (max-width: 870px) {
   h2 {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
-
 
 @media screen and (max-width: 600px) {
   .line {
@@ -448,5 +474,16 @@ nav a:hover,
   .project {
     overflow-wrap: break-word;
     height: auto;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+  .main-left {
+    width: 100%;
+  }
+  .right-scrollable {
+    overflow-y: initial;
+    width: 100%;
   }
 }

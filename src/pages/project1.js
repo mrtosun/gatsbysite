@@ -61,11 +61,7 @@ export default () => (
         must move in stealth and manage to get close enough to take a picture.
       </p>
       <figure>
-        <img
-          src={birds}
-          alt="birds"
-          style={{ width: "85%", paddingBottom: "20px" }}
-        />
+        <img src={birds} alt="birds" />
         <figcaption>Different birds, different personalities.</figcaption>
       </figure>
       <p>
@@ -85,11 +81,7 @@ export default () => (
         bird to capture a photo. Timing and positioning is key for a good shot.
       </p>
       <figure>
-        <img
-          src={scenario}
-          alt="scenario"
-          style={{ width: "85%", paddingBottom: "20px" }}
-        />
+        <img src={scenario} alt="scenario" />
         <figcaption>
           How to take a great bird photo or fail miserably.
         </figcaption>
@@ -102,12 +94,10 @@ export default () => (
         realism. This style allows quick production and allows for more
         expressiveness.
       </p>
-      <img
-        src={assets}
-        alt="assets"
-        style={{ width: "90%", paddingBottom: "20px" }}
-      />
-      <figcaption>Hand drawn assets.</figcaption>
+      <figure>
+        <img src={assets} alt="assets" />
+        <figcaption>Hand drawn assets.</figcaption>
+      </figure>
       <h3>Demo</h3>
       <p>
         An early development version of Wildwatch was presented at the
@@ -116,16 +106,18 @@ export default () => (
         and constructive critism from fellow game developers. You can find the
         gameplay video down below.
       </p>
-      <iframe
-        class="youtube"
-        width="672"
-        height="378"
-        title="wildwatch"
-        src="https://www.youtube.com/embed/Ety0naqkcrM"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div className="youtube-container">
+        <iframe
+        width="100%"
+        height="100%"
+          class="youtube"
+          title="wildwatch"
+          src="https://www.youtube.com/embed/Ety0naqkcrM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <p>
         I continue to work on Wildwatch whenever I find time to spare. Who
         knows, maybe one day you might want to get it during a Steam sale. :)
