@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Scene from "../components/scene"
 
 export default () => <Scene />
+
 /*
 export default () => (
   <div class="main-main">
