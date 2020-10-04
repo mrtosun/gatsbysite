@@ -1,7 +1,10 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
+import Scene from "../components/scene"
 
+export default () => <Scene />
+/*
 export default () => (
   <div class="main-main">
     <Helmet>
@@ -57,4 +60,6 @@ export default () => (
       <div class="copyright">© Mert Tosun 2020</div>
     </footer>
   </div>
+  
 )
+*/
