@@ -10,9 +10,9 @@ class Scene extends React.Component {
   componentDidMount() {
     let scene = new THREE.Scene()
     scene.background = new THREE.Color(255,255,255)
-    this.camera = new THREE.PerspectiveCamera(75, this.mount.offsetWidth/this.mount.offsetHeight, 0.1, 1000)
-
-    this.renderer = new THREE.WebGLRenderer();
+    this.camera = new THREE.OrthographicCamera(this.mount.offsetWidth/-200, this.mount.offsetWidth/200, this.mount.offsetHeight/200,this.mount.offsetHeight/-200, 1, 1000)
+    scene.add(this.camera);
+    this.renderer = new SVGRenderer;
     this.renderer.setSize(this.mount.offsetWidth, this.mount.offsetHeight)
     this.mount.appendChild(this.renderer.domElement)
 
@@ -20,7 +20,7 @@ class Scene extends React.Component {
 
 
     //wireframe geometry
-    const cube = new THREE.BoxGeometry();
+    const cube = new THREE.BoxGeometry(3,3,3);
     var wireframe = new THREE.WireframeGeometry(cube);
     
     var matLineBasic = new THREE.LineBasicMaterial( { color: 0xfa7701 } );
@@ -29,6 +29,7 @@ class Scene extends React.Component {
     wireframe1.computeLineDistances();
     wireframe1.visible = true;
   
+    wireframe1.position.x = 3;
     scene.add(wireframe1)
 
 
@@ -40,8 +41,8 @@ class Scene extends React.Component {
     this.animate = function () {
       requestAnimationFrame(this.animate.bind(this))
 
-      wireframe1.rotation.x += 0.01
-      wireframe1.rotation.y += 0.01
+      wireframe1.rotation.x += 0.005
+      wireframe1.rotation.y += 0.005
 
       this.renderer.render(scene, this.camera)
     }
